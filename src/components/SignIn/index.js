@@ -69,8 +69,8 @@ const SignIn = () => {
         </Button>
         <p className={styles.logIn}>
           Don't have an account{' '}
-          <Link className={styles.link} to="/sign-in">
-            Sign In
+          <Link className={styles.link} to="/sign-up">
+            Sign Up
           </Link>
         </p>
       </form>
