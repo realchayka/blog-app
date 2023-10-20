@@ -6,6 +6,7 @@
     padding: 15px 20px;
     position: relative;
     overflow-wrap: anywhere;
+    min-height: 6vh;
 }
 
 .title {
@@ -93,6 +94,8 @@
     }
     &Image {
         width: 46px;
+        height: 46px;
+        object-fit: cover;
         border-radius: 20px;
     }
     &Date {
