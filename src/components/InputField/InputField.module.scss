@@ -1,0 +1,27 @@
+.errorMessage {
+    color: red;
+}
+.input {
+    width: 320px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--grey-grey-5, #D9D9D9);
+    background: var(--grey-grey-1, #FFF);
+}
+.formGroup {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.label {
+    color: var(--grey-grey-9, #262626);
+    /* Regular / 14px | 22px */
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+}

@@ -1,0 +1,137 @@
+.listItem {
+    margin-top: 26px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+    position: relative;
+    min-height: 70vh;
+    overflow-wrap: anywhere;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1890FF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 80%;
+    /* 140% */
+}
+
+.tag {
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+    color: black;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.tagList {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.text {
+    margin-top: 7px;
+    color: rgba(0, 0, 0, 0.75);
+    /* @font-size-sm: 12px */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 183.333% */
+}
+.span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.likeCount {
+
+    color: rgba(0, 0, 0, 0.75);
+    /* @font-size-sm: 12px */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 183.333% */
+}
+
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    &Title {
+        color: rgba(0, 0, 0, 0.85);
+
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+    }
+    &Image {
+        width: 46px;
+        border-radius: 20px;
+    }
+    &Date {
+        color: rgba(0, 0, 0, 0.50);
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 183.333% */
+    }
+    &Description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.delete {
+    color: #F5222D;
+    border-color: #F5222D;
+}
+
+.edit {
+    color: #52C41A;
+    padding: 4px 15px;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editGroup {
+    position: absolute;
+    top: 60px;
+    right: 4px;
+    display: flex;
+    gap: 10px;
+}
+
+.heartIcon {
+    cursor: pointer;
+}

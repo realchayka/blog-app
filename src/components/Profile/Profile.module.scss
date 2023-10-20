@@ -1,0 +1,97 @@
+.main {
+    max-width: 384px;
+    margin-top: 60px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--grey-grey-5, #D9D9D9);
+    background: var(--grey-grey-1, #FFF);
+    box-shadow: 0px 0.6088px 2.93329px 0px rgba(0, 0, 0, 0.02), 0px 1.46302px 7.04911px 0px rgba(0, 0, 0, 0.03), 0px 2.75474px 13.27285px 0px rgba(0, 0, 0, 0.04), 0px 4.91399px 23.67649px 0px rgba(0, 0, 0, 0.04), 0px 9.19107px 44.28427px 0px rgba(0, 0, 0, 0.05), 0px 22px 106px 0px rgba(0, 0, 0, 0.07);
+
+}
+
+.title {
+    text-align: center;
+    color: var(--grey-grey-9, #262626);
+    text-align: center;
+    /* Semibold / 20 px | 28 px */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 140% */
+}
+
+
+
+
+
+.input {
+    width: 320px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--grey-grey-5, #D9D9D9);
+    background: var(--grey-grey-1, #FFF);
+}
+
+.firstInput {
+    margin-top: 21px;
+}
+
+.lastInput {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 21px;
+}
+
+
+.agreeLabel {
+    color: var(--grey-grey-8, #595959);
+    /* Regular / 14px | 22px */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    background: var(--daybreak-blue-blue-6, #1890FF);
+}
+
+.logIn {
+    margin-top: 8px;
+    color: var(--grey-grey-7, #8C8C8C);
+    text-align: center;
+    /* Regular / 12px | 20 px */
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.link {
+    color: var(--daybreak-blue-blue-6, #1890FF);
+    /* Regular / 12px | 20 px */
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.errorMessage {
+    color: red;
+}
+

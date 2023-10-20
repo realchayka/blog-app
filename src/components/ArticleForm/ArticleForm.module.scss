@@ -1,0 +1,100 @@
+.bigWidth {
+  max-width: 874px;
+  width: 100%;
+}
+
+.input {
+  width: 320px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--grey-grey-5, #d9d9d9);
+  background: var(--grey-grey-1, #fff);
+}
+
+.firstInput {
+  margin-top: 21px;
+}
+
+.lastInput {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 21px;
+}
+
+.agreeLabel {
+  color: var(--grey-grey-8, #595959);
+  /* Regular / 14px | 22px */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 157.143% */
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px;
+  height: auto;
+  max-width: 344px;
+  width: 100%;
+  background: var(--daybreak-blue-blue-6, #1890ff);
+}
+
+.logIn {
+  margin-top: 8px;
+  color: var(--grey-grey-7, #8c8c8c);
+  text-align: center;
+  /* Regular / 12px | 20 px */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 166.667% */
+}
+
+.link {
+  color: var(--daybreak-blue-blue-6, #1890ff);
+  /* Regular / 12px | 20 px */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.errorMessageAccount {
+  margin-top: 10px;
+}
+
+.buttonDanger {
+  box-sizing: border-box;
+  height: 36px;
+  padding: 8px 36px;
+  border: 1px solid #ff4d4f;
+  color: #ff4d4f;
+}
+.buttonOutline {
+  box-sizing: border-box;
+  height: 36px;
+  padding: 8px 36px;
+  color: var(--info-color, #1890ff);
+  text-align: center;
+  /* Regular / 16 px | 24 px */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border-color: #1890ff;
+}
+
+.tagGroup {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}

@@ -1,0 +1,29 @@
+.errorMessage {
+    color: red;
+}
+
+.agree {
+    margin-top: 8px;
+}
+
+
+.checkboxLabel {
+    max-width: 290px;
+    color: var(--grey-grey-8, #595959);
+    /* Regular / 14px | 22px */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+}
+
+.checkbox{
+    width: 16px;
+    height: 16px;
+}
+input[type='checkbox']:checked {
+    width: 16px;
+    height: 16px;
+}
