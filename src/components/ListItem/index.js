@@ -7,18 +7,15 @@ import { heartIcon, heartIconLiked } from '../../assets/icons'
 
 import styles from './ListItem.module.scss'
 const ListItem = ({ favoritesCount, body, createdAt, title, tagList, author, slug, favorited }) => {
-  const handleClickLike = () => {
-    console.log('click')
-  }
   const { username, image } = author
   const formattedDate = format(new Date(createdAt), 'MMMM dd yyyy')
   return (
-    <Link to={`/articles/${slug}`}>
-      <div className={styles.listItem}>
+    <div className={styles.listItem}>
+      <Link to={`/articles/${slug}`}>
         <h2 className={styles.title}>
           {title}
           <div className={styles.span}>
-            <img onClick={handleClickLike} className={styles.heartIcon} src={favorited ? heartIconLiked : heartIcon} />
+            <img className={styles.heartIcon} src={favorited ? heartIconLiked : heartIcon} />
             <span className={styles.likeCount}>{favoritesCount}</span>
           </div>
         </h2>
@@ -39,8 +36,8 @@ const ListItem = ({ favoritesCount, body, createdAt, title, tagList, author, slu
           </div>
           <img className={styles.personImage} src={image} />
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   )
 }
 

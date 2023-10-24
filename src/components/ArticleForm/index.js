@@ -27,6 +27,7 @@ const ArticleForm = ({ handleFormSubmit }) => {
 
   const onSubmit = (data) => {
     handleFormSubmit(data)
+    localStorage.setItem('currentPage', 1)
   }
 
   return (
