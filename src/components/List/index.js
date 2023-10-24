@@ -11,9 +11,11 @@ import PaginationComponent from '../Pagination'
 import styles from './List.module.scss'
 
 const List = ({articlesData, articlesData: {data: {articles, articlesCount}}, fetchArticles }) => {
-  const [currentPage, setCurrentPage] = useState(1)
+  let initialPage = parseInt(localStorage.getItem('currentPage')) || 1
+  const [currentPage, setCurrentPage] = useState(initialPage)
   const {loading, error} = articlesData
   let pages = Math.ceil(articlesCount / 5)
+  
 
 
   const handlePageChange = (page) => {
@@ -21,6 +23,8 @@ const List = ({articlesData, articlesData: {data: {articles, articlesCount}}, fe
   }
 
   useEffect(() => {
+    localStorage.setItem('currentPage', currentPage)
+    
     fetchArticles(currentPage)
   }, [currentPage])
   if(loading) {

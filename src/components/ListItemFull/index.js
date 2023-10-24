@@ -8,7 +8,7 @@ import { QuestionCircleOutlined } from '@ant-design/icons'
 import classNames from 'classnames'
 import { format } from 'date-fns'
 
-import { heartIcon, heartIconLiked } from '../../assets/icons'
+import { heartIcon, heartIconLiked, noImage } from '../../assets/icons'
 import { deletePost, fetchOneArticle } from '../../redux/articles/articlesActions'
 import Spin from '../Spin'
 import BlogService from '../../services/blog-service'
@@ -70,7 +70,11 @@ const ListItemFull = ({ fetchOneArticle, article, match }) => {
   }
 
   if (!article) {
-    return <Spin />
+    return (
+      <div className={styles.loading}>
+        <Spin />
+      </div>
+    )
   }
 
   return (
@@ -96,7 +100,7 @@ const ListItemFull = ({ fetchOneArticle, article, match }) => {
           <h3 className={styles.personTitle}>{username}</h3>
           <p className={styles.personDate}>{formattedDate} </p>
         </div>
-        <img className={styles.personImage} src={image} />
+        <img className={styles.personImage} src={image ? image : noImage} />
         {auth && name === username && (
           <div className={styles.editGroup}>
             <Popconfirm
