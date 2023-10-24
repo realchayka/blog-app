@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { peopleIconPng } from '../../assets/icons'
@@ -16,9 +16,10 @@ const Header = () => {
     }
     return null
   })
-
+  const history = useHistory()
   const handleLinkClick = () => {
     localStorage.setItem('currentPage', 1)
+    history.push('/')
     window.location.reload()
   }
 
