@@ -10,13 +10,17 @@ import styles from './Header.module.scss'
 const Header = () => {
   const dispatch = useDispatch()
   let user = useSelector((state) => state.user.user)
-
   let isAuth = useSelector((state) => {
     if (state.user) {
       return state.user.isAuth
     }
     return null
   })
+
+  const handleLinkClick = () => {
+    localStorage.setItem('currentPage', 1)
+    window.location.reload()
+  }
 
   const handleLogout = () => {
     dispatch(logoutHandler())
@@ -26,7 +30,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Link to="/" className={styles.headerLeft}>
+      <Link onClick={handleLinkClick} to="/" className={styles.headerLeft}>
         <h2 className={styles.headerTitle}>Realworld Blog</h2>
       </Link>
       <div className={styles.headerRight}>
